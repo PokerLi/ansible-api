@@ -56,8 +56,8 @@ results_callback = ResultCallback()
 
 # create inventory, use path to host config file as source or hosts in a comma separated string
 inventory = InventoryManager(loader=loader, sources=['/tmp/hosts'])
-#add_host = inventory.add_host(host='112.4.179.11')
-#print (inventory.get_host(hostname='119.28.23.245'))
+#add_host = inventory.add_host(host='')
+#print (inventory.get_host(hostname=''))
 # variable manager takes care of merging all the different sources to give you a unifed view of variables available in each context
 variable_manager = VariableManager(loader=loader, inventory=inventory)
 
